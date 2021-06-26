@@ -1,0 +1,322 @@
+@media (min-width: 1250px) {
+	.container {
+		max-width: 1230px;
+	}
+}
+
+@media screen and (max-width: 1250px) {
+	.container {
+		max-width: 100%;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+
+@media screen and (max-width: 1199px) {
+	.doctors_slider,
+	.mini-prices_slider {
+		max-width: calc(100% - 180px);
+	}
+	.doctors_item {
+		justify-content: center;
+	}
+}
+
+@media screen and (max-width: 1100px) {
+	.header-top_contacts,
+	.footer_contacts {
+		display: flex;
+		flex-direction: column;
+	}
+	.header-top_contacts-item,
+	.footer_contacts-item {
+		margin-bottom: 5px;
+	}
+	.banner_info {
+		position: relative;
+		z-index: 1;
+	}
+	.banner_img {
+		max-width: 560px;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.problems_item,
+	.programs_item {
+		width: 48%;
+	}
+	.problems_item:not(:nth-child(3n)),
+	.programs_item:not(:nth-child(3n)) {
+		margin-right: 0;
+	}
+	.problems_item:not(:nth-child(even)),
+	.programs_item:not(:nth-child(even)) {
+		margin-right: 4%;
+	}
+	#map {
+		height: 450px;
+	}
+	.our-doctors_item {
+		width: 31%;
+	}
+	.our-doctors_item:not(:nth-child(4n)) {
+		margin-right: 0;
+	}
+	.our-doctors_item:not(:nth-child(3n)) {
+		margin-right: 3.5%;
+	}
+	.doctors_info {
+		max-width: 100%;
+	}
+	.single-program_doctors-container .doctors_item {
+		margin-right: 0;
+	}
+}
+
+@media screen and (max-width: 945px) {
+	.header-bottom_burger {
+		display: block;
+		cursor: pointer;
+	}
+	.header-bottom_burger span {
+		display: block;
+		position: relative;
+		width: 20px;
+		height: 4px;
+		background: #434242;
+		transition: all 0.3s ease-in-out;
+	}
+	.header-bottom_burger span::before,
+	.header-bottom_burger span::after {
+		position: absolute;
+		background: #434242;
+		content: "";
+		width: 20px;
+		height: 4px;
+		transition: all 0.2s ease-in-out;
+	}
+	.header-bottom_burger span::before {
+		top: -8px;
+	}
+	.header-bottom_burger span::after {
+		top: 8px;
+	}
+	.header-bottom_burger.active span {
+		background: transparent;
+	}
+	.header-bottom_burger.active span::before {
+		transform: rotate(45deg) translate(5px, 6px);
+	}
+	.header-bottom_burger.active span::after {
+		transform: rotate(-45deg) translate(5px, -6px);
+	}
+	.header-bottom_container {
+		position: relative;
+		height: 60px;
+	}
+	.header-bottom_container.active .header-bottom_menu {
+		top: 60px;
+		opacity: 1;
+	}
+	.header-bottom_menu {
+		flex-direction: column;
+		position: absolute;
+		top: -1000px;
+		left: 0;
+		width: 100%;
+		z-index: 2;	
+		opacity: 0;
+		transition: 0.3s opacity, 0.3s top;		
+	}
+	.header-bottom_menu-item {
+		height: 40px;
+		padding: 0 15px;
+		background-color: #EFEFEF;
+		margin-right: 0;
+	}	
+	.banner_info {
+		max-width: 100%;
+	}
+}
+
+@media screen and (max-width: 860px) {
+	.single-doctor_img {
+		width: 260px;
+		height: 345px;
+	}
+	.single-program_include-list {
+		columns: 1;
+	}
+	.price_item-title {
+		flex-shrink: 1;
+	}
+}
+
+@media screen and (max-width: 750px) {
+	.header-top_contacts {
+		display: none;
+	}
+	.header-top_callback {
+		margin-left: auto;
+	}
+	.footer_contacts {
+		align-items: center;
+	}
+	.footer_top,
+	.footer_bottom,
+	.footer_info {
+		flex-direction: column;
+		align-items: center;
+	}
+	.footer_contacts,
+	.footer_social {
+		margin: 30px auto;
+	}
+	.footer_menu-col {
+		margin: 0 15px;
+	}
+	.footer_contacts-item {
+		margin-right: 0;
+	}
+	.footer_social-item:nth-child(n) {
+		margin: 0 20px;
+	}
+	.footer_company {
+		margin-bottom: 5px;
+	}
+	.doctors_arrow,
+	.mini-prices_arrow {
+		display: none !important;
+	}
+	.doctors_slider, 
+	.mini-prices_slider {
+		max-width: 100%;
+	}
+	.banner_img {
+		display: none;
+	}
+	.stocks_item {
+		flex-direction: column;
+	}
+	.stocks_info {
+		order: 2;
+	}
+	.stocks_img {
+		order: 1;
+		width: 100%;
+		height: 300px;
+		border-radius: 20px 20px 0 0;
+	}
+}
+
+@media screen and (max-width: 720px) {
+	.our-doctors_item {
+		width: 48%;
+	}
+	.our-doctors_item:not(:nth-child(3n)) {
+		margin-right: 0;
+	}
+	.our-doctors_item:not(:nth-child(even)) {
+		margin-right: 4%;
+	}
+}
+
+@media screen and (max-width: 685px) {
+	.problems_item:not(:nth-child(3n)),
+	.problems_item:not(:nth-child(even)),
+	.programs_item:not(:nth-child(3n)),
+	.programs_item:not(:nth-child(even)) {
+		width: 100%;
+		margin-right: 0;
+	}
+	#map {
+		height: 350px;
+	}
+	.title {
+		padding-left: 25px;
+		font-size: 40px;
+	}
+	.subtitle {
+		padding-left: 25px;
+	}
+	.banner_subtitle,
+	.banner_appointment,
+	.footer-form_description,
+	.footer-form_btn,
+	.single-doctor_position,
+	.single-stock_deadline {
+		margin-left: 25px;
+	}
+	.single-doctor_biography {
+		flex-direction: column;
+	}
+	.single-doctor_img {
+		margin-right: 0;
+		margin-bottom: 30px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.title {
+		font-size: 32px;
+	}
+	.subtitle,
+	.single-program_price,
+	.stocks_item-title {
+		font-size: 28px;
+	}
+	.doctors_img {
+		width: 100px;
+		height: 100px;
+	}
+	.mini-prices_view, 
+	.mini-prices_download,
+	.price_btn {
+		width: 340px;
+	}
+	.our-doctors_item-img {
+		height: 300px;
+	}
+	.stocks_img {
+		height: 250px;
+	}
+	.single-stock_img {
+		height: 280px;
+	}
+	.price_accordion-title {
+		font-size: 20px;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.header-top_logo img,
+	.footer_logo img {
+		max-width: 150px;
+	}
+	.header-top_callback,
+	.footer_callback {
+		width: 150px;
+	}
+	.banner_appointment, .problems_appointment {
+		width: 210px;
+		height: 45px;
+	}
+	.mini-prices_view, 
+	.mini-prices_download,
+	.price_btn {
+		width: 330px;
+		height: 50px;
+	}
+	.footer-form_btn {
+		width: 190px;
+		height: 45px;
+	}
+	.our-doctors_item:nth-child(n) {
+		width: 100%;
+		margin-right: 0;
+	}
+	.our-doctors_item-img {
+		height: 400px;
+	}
+}
